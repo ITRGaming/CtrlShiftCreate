@@ -20,7 +20,7 @@ export default function NavBar() {
                                     <a className="nav-link" href="/community">Community</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/about">About</a>
+                                    <a className="nav-link" href="/about">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/login">Login/Signup</a>
