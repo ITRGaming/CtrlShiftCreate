@@ -1,15 +1,17 @@
 import './App.css';
+// import AboutUs from './components/AboutUs';
 // import Login from './components/Login'
 import NavBar from './components/NavBar'
-// import AboutUs from './components/AboutUs'
-import Login from './components/Login'
-
+import Home from './pages/Home'
+import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <NavBar/>
-      {/* <AboutUs/> */}
-      <Login/>
+    <NavBar/>
+    <Home/>
+    {/* <Login/> */}
+    {/* <AboutUs/> */}
+    <Footer/>
     </>
   );
 }
