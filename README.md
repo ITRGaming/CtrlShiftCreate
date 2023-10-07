@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CtrlShiftCreate
 Team Member: Raghav Bhutra, Aman Keshri, Kaushik Dhara. 
 Problem Statement: WEB/APP 2: Sustainable Product Marketplace.
 =======
+=======
+>>>>>>> 0c2c18564856b4208ad71739f554d467bb9c93ec
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,4 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
 >>>>>>> origin/kaushik
+=======
+>>>>>>> 0c2c18564856b4208ad71739f554d467bb9c93ec
