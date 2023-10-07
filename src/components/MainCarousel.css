@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#carousel-main{
+    margin: rem;
+}
+
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit: contain;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+  }
