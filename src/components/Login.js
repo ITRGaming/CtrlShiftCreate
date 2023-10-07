@@ -2,7 +2,46 @@ import React, { useState } from 'react';
 import './Login.css';
 import Validation from './validation';
 
+export function signOut() {
+	window.localStorage.removeItem("IsLoggedIn");
+}
+
 function Login() {
+
+	const [Loginvalue, setLogin] = useState({
+		loginEmail: '',
+		loginPassword: ''
+	})
+
+	const handleData= (e) => {
+		setLogin({ ...Loginvalue, [e.target.name]: e.target.value });
+	}
+
+	const handleLogin = (e) => {
+		e.preventDefault();
+		fetch("http://localhost:5000/register", {
+				method: "POST",
+				crossDomain: true,
+				headers: {
+					"Content-Type": "application/json",
+					Accept: "application/json",
+					"Access-Control-Allow-Origin": "*",
+				},
+				body: JSON.stringify({
+					email: Loginvalue.loginEmail,
+					password: Loginvalue.loginPassword,
+				}),
+
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					console.log(data, "userLoggedIn");
+					alert("Succesfully LoggedIn")
+					window.localStorage.setItem("token", data.data)
+					window.localStorage.setItem("IsLoggedIn", true);
+				})
+		}
+
 	const [values, setValues] = useState({
 		email: '',
 		password: '',
@@ -50,11 +89,11 @@ function Login() {
 						<input type="checkbox" id="check" />
 						<div className="login form">
 							<header>Login</header>
-							<form action="#">
-								<input type="text" placeholder="Enter your email" required />
-								<input type="password" placeholder="Enter your password" required />
+							<form onSubmit={handleLogin}>
+								<input type="text" placeholder="Enter your email" onChange={handleData} required />
+								<input type="password" placeholder="Enter your password" onChange={handleData} required />
 								<a href="/forgotpass">Forgot password?</a>
-								<input type="button" className="button" value="Login" />
+								<input type="button" className="button" value="Login" onClick={handleLogin} />
 							</form>
 							<div className="signup">
 								<span className="signup">Don't have an account?
