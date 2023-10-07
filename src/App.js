@@ -1,10 +1,10 @@
 import React from 'react';
-// import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
-// import Login from './components/Login';
-// import ContactForm from './components/ContactForm'
+import Login from './components/Login';
+import ContactForm from './components/ContactForm'
 // import SingleProducts from './components/VegChicken'
 // import AboutUs from './components/AboutUs'
 // import Footer from './components/Footer'
@@ -14,9 +14,10 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Home />
+    <BrowserRouter>
+      <Routes>
+        <NavBar />
+        <Home />
       {/* <SingleProducts /> */}
       {/* <AboutUs/> */}
       {/* <ContactForm/> */}
@@ -24,15 +25,12 @@ function App() {
       {/* <Footer/> */}
       {/* <CartProvider/> */}
 
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='login' element={<Login />} />
-          <Route path='aboutus' element={<AboutUs />} />
-          <Route path='contactus' element={<ContactForm />} />
-        </Routes>
-      </BrowserRouter > */}
-    </>
+        <Route path='/' element={<Home />} />
+        <Route path='login' element={<Login />} />
+        <Route path='aboutus' element={<AboutUs />} />
+        <Route path='contactus' element={<ContactForm />} />
+      </Routes>
+    </BrowserRouter >
 
   );
 }
