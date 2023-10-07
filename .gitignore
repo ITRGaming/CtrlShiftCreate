@@ -6,6 +6,8 @@
 /src/routes/api/app.js
 /.pnp
 .pnp.js
+/package-lock.json
+/package.json
 
 # testing
 /coverage

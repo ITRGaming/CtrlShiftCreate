@@ -22,20 +22,26 @@ export default function NavBar() {
                                     
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/about">About Us</a>
+                                    <Link className="nav-link" to="">About Us</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/contact">Contact Us</a>
+                                    <Link className="nav-link" to="./contactus">Contact Us</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="./login">Login/Signup</Link>
                                
                                 </li>
                                 <li className="nav-item">
+                                    <a className="nav-link" href="/search"><span class="material-symbols-outlined">
+                                        search
+                                    </span></a>
+                                </li>
+                                <li className="nav-item">
                                     <a className="nav-link" href="/cart"><span class="material-symbols-outlined">
                                         shopping_cart
                                     </span></a>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>
