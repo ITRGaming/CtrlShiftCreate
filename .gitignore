@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
-/src/api/node_modules
-/src/api/app.js
+/src/routes/api/node_modules
+/src/routes/api/app.js
 /.pnp
 .pnp.js
 
