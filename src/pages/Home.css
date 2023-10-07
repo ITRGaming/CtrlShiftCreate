@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#homeId{
+    margin: 2rem 0;
+}
+
+#carousel-main{
+    height: 90vh;
+}
+
+#homeimg-cont{
+    background-color: #C2F6B5;
+    margin: 2rem 0;
+}
+
+#homeimg-cont img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    height: 25rem;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    transition: .5s ease;
+    opacity:0;
+  }
+  
+  .card:hover .overlay {
+    opacity:1;
+  }
+  

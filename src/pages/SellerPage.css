@@ -1,0 +1,15 @@
+#seller-text p, h4{
+  color: black;
+}
+
+#seller-text{
+  background-color: #F7EDED;
+}
+
+#seller-form{
+  background-color: #C2F6B5;
+}
+
+#seller-part{
+  background-color: rgba(254, 255, 191, 1);
+}
