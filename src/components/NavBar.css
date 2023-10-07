@@ -1,7 +1,12 @@
 /* Navigation Bar Styling */
 
+*, .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
 #navId {
-    background-color: rgba(254, 255, 191, 1);
+    background-color: rgba(254, 255, 191, 1) !important;
     padding: 0.5rem;
 }
 

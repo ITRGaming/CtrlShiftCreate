@@ -23,27 +23,6 @@
     width: 50%;
 }
 
-/* .box{
-    position: relative;
-    overflow: hidden;
-}
-
-.box img{
-    width: 100%;
-    transition: all linear 0.7s;
-}
-
-img.hover-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.box:hover img.hover-img{
-    opacity: 1;
-} */
-
 .card {
     position: relative;
     overflow: hidden;

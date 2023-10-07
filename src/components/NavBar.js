@@ -4,7 +4,7 @@ import './NavBar.css';
 export default function NavBar() {
     return (
         <>
-            <div>
+            <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg bg-body-tertiary" id='navId'>
                     <div className="container-fluid">
                         <a className="navbar-brand" id='logo' href="/home"><img src="/images/logo.png" alt="not found" /></a>
@@ -20,10 +20,10 @@ export default function NavBar() {
                                     <a className="nav-link" href="/community">Community</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/about">About</a>
+                                    <a className="nav-link" href="/about">Products</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/contact">Contact Us</a>
+                                    <a className="nav-link" href="/contact">About</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/login">Login/Signup</a>
