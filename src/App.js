@@ -1,17 +1,22 @@
+import React from 'react';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
-// import Login from './components/Login'
-import NavBar from './components/NavBar'
-import Home from './pages/Home'
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
 // import AboutUs from './components/AboutUs'
-import Login from './components/Login'
+import Login from './components/Login';
+
 function App() {
   return (
-  <>
-    <NavBar/>
-    <Home/>
-    {/* <AboutUs/> */}
-   {/* <Login/> */}
-    </>
+    <BrowserRouter>
+      <NavBar />
+      <Home />
+
+      <Routes>
+        <Route path='/' element={<NavBar />} />
+        <Route path='login' element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
