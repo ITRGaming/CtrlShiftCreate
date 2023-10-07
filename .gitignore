@@ -2,12 +2,9 @@
 
 # dependencies
 /node_modules
-<<<<<<< HEAD
 /src/routes/api/node_modules
 /src/routes/api/package-lock.json
 /src/routes/api/package.json
-=======
->>>>>>> 0c2c18564856b4208ad71739f554d467bb9c93ec
 /.pnp
 .pnp.js
 
