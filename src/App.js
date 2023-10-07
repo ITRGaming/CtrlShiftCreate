@@ -15,7 +15,6 @@ import ContactForm from './components/ContactForm'
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
         <NavBar />
         <Home />
       {/* <SingleProducts /> */}
@@ -25,9 +24,10 @@ function App() {
       {/* <Footer/> */}
       {/* <CartProvider/> */}
 
+      <Routes>
         <Route path='/' element={<Home />} />
         <Route path='login' element={<Login />} />
-        <Route path='aboutus' element={<AboutUs />} />
+        {/* <Route path='aboutus' element={<AboutUs />} /> */}
         <Route path='contactus' element={<ContactForm />} />
       </Routes>
     </BrowserRouter >
